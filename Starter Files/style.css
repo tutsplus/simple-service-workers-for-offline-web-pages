@@ -1,0 +1,56 @@
+html, body {
+	height: 100vh;
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	background-color: #3498db;
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+.wrapper {
+	box-sizing: border-box;
+	background-color: white;
+	box-shadow: 0 1px 8px 0 #016cb4;
+	max-width: 35rem;
+	width: 100%;
+	margin: 2rem auto;
+}
+
+h1 {
+	font-size: 3.2rem;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 0 #177cc0;
+}
+
+a {
+	text-decoration: none
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #fff;
+  color: #444;
+}
+
+nav a {
+  padding: 20px;
+  font-size: 150%;
+	text-align: center;
+  background-color: #444;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #fff;
+  color: #444;
+}
+
+.content {
+	padding: 2rem 3rem
+}

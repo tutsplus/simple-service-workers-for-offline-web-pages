@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sorry, you're offline</title>
+	<style>
+	body {
+		font-family: sans-serif;
+		line-height: 1.5;
+		background: #3498db;
+	}
+	h1 {
+		font-size: 2em;
+		font-weight: 700;
+		color: #fff;
+		text-align: center;
+	}
+	.wrapper {
+		box-sizing: border-box;
+		max-width: 35rem;
+		width: 100%;
+		margin: 2rem auto;
+		padding: 2rem
+	}
+	.bouncing_ball {
+		position: relative;
+		width: 4rem;
+		margin: 0 auto;
+		height: 12rem;
+	}
+	.ball {
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		background: #fff;
+		position: absolute;
+		top: 0;
+		animation: bounce 1s infinite;
+	}
+
+	@keyframes bounce {
+		0% {
+			top: 0;
+			animation-timing-function: ease-in;
+		}
+		34% {
+			height: 4rem;
+			width: 4rem;
+		}
+		35% {
+			top: 8rem;
+			height: 3rem;
+			width: 4.3rem;
+			animation-timing-function: ease-out;
+		}
+		45% {
+			height: 4rem;
+			width: 4rem;
+		}
+		90% {
+			top: 0;
+		}
+		100% {
+			top: 0;
+		}
+	}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="bouncing_ball">
+			<div class="ball"></div>
+		</div>
+		<h1>Sorry, you're offline. Here's a bouncy ball while you wait to get back online.</h1>
+	</div>
+</body>
+</html>
